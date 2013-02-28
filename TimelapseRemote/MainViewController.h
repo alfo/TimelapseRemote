@@ -7,11 +7,23 @@
 //
 
 #import "FlipsideViewController.h"
-
+#import "RscMgr.h"
 #import <CoreData/CoreData.h>
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+#define BUFFER_LEN 1024
+
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, RscMgrDelegate> {
+    RscMgr *rscMgr;
+    UInt8 rxBuffer[BUFFER_LEN];
+    UInt8 txBuffer[BUFFER_LEN];
+}
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+- (IBAction)stateChange:(id)sender;
+- (IBAction)directionChange:(id)sender;
+- (IBAction)intervalChange:(id)sender;
+- (IBAction)distanceChange:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *takenLabel;
+@property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
+@property (strong, nonatomic) IBOutlet UIStepper *distanceLabel;
 @end

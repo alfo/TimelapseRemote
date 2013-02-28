@@ -21,6 +21,8 @@
 		CA7BA36A16DF898500683661 /* TimelapseRemote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36816DF898500683661 /* TimelapseRemote.xcdatamodeld */; };
 		CA7BA36D16DF898500683661 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36C16DF898500683661 /* MainViewController.m */; };
 		CA7BA37016DF898500683661 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36F16DF898500683661 /* FlipsideViewController.m */; };
+		CA7BA37916DF8A9700683661 /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA37816DF8A9700683661 /* libRscMgrUniv.a */; };
+		CA7BA37B16DF8AC100683661 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,10 @@
 		CA7BA36C16DF898500683661 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		CA7BA36E16DF898500683661 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		CA7BA36F16DF898500683661 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		CA7BA37616DF8A9700683661 /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
+		CA7BA37716DF8A9700683661 /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
+		CA7BA37816DF8A9700683661 /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
+		CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7BA37B16DF8AC100683661 /* ExternalAccessory.framework in Frameworks */,
 				CA7BA34C16DF898500683661 /* UIKit.framework in Frameworks */,
 				CA7BA34E16DF898500683661 /* Foundation.framework in Frameworks */,
 				CA7BA35016DF898500683661 /* CoreGraphics.framework in Frameworks */,
 				CA7BA35216DF898500683661 /* CoreData.framework in Frameworks */,
+				CA7BA37916DF8A9700683661 /* libRscMgrUniv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,7 @@
 		CA7BA33F16DF898500683661 = {
 			isa = PBXGroup;
 			children = (
+				CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */,
 				CA7BA35316DF898500683661 /* TimelapseRemote */,
 				CA7BA34A16DF898500683661 /* Frameworks */,
 				CA7BA34916DF898500683661 /* Products */,
@@ -108,6 +117,9 @@
 		CA7BA35416DF898500683661 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA7BA37616DF8A9700683661 /* redparkSerial.h */,
+				CA7BA37716DF8A9700683661 /* RscMgr.h */,
+				CA7BA37816DF8A9700683661 /* libRscMgrUniv.a */,
 				CA7BA35516DF898500683661 /* TimelapseRemote-Info.plist */,
 				CA7BA35616DF898500683661 /* InfoPlist.strings */,
 				CA7BA35916DF898500683661 /* main.m */,
@@ -277,6 +289,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TimelapseRemote/TimelapseRemote-Prefix.pch";
 				INFOPLIST_FILE = "TimelapseRemote/TimelapseRemote-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TimelapseRemote\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +304,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TimelapseRemote/TimelapseRemote-Prefix.pch";
 				INFOPLIST_FILE = "TimelapseRemote/TimelapseRemote-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TimelapseRemote\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
