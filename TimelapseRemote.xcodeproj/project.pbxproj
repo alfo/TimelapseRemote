@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA7BA34C16DF898500683661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA34B16DF898500683661 /* UIKit.framework */; };
+		CA7BA34E16DF898500683661 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA34D16DF898500683661 /* Foundation.framework */; };
+		CA7BA35016DF898500683661 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA34F16DF898500683661 /* CoreGraphics.framework */; };
+		CA7BA35216DF898500683661 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA35116DF898500683661 /* CoreData.framework */; };
+		CA7BA35816DF898500683661 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA7BA35616DF898500683661 /* InfoPlist.strings */; };
+		CA7BA35A16DF898500683661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA35916DF898500683661 /* main.m */; };
+		CA7BA35E16DF898500683661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA35D16DF898500683661 /* AppDelegate.m */; };
+		CA7BA36016DF898500683661 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7BA35F16DF898500683661 /* Default.png */; };
+		CA7BA36216DF898500683661 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7BA36116DF898500683661 /* Default@2x.png */; };
+		CA7BA36416DF898500683661 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7BA36316DF898500683661 /* Default-568h@2x.png */; };
+		CA7BA36716DF898500683661 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7BA36516DF898500683661 /* MainStoryboard.storyboard */; };
+		CA7BA36A16DF898500683661 /* TimelapseRemote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36816DF898500683661 /* TimelapseRemote.xcdatamodeld */; };
+		CA7BA36D16DF898500683661 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36C16DF898500683661 /* MainViewController.m */; };
+		CA7BA37016DF898500683661 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36F16DF898500683661 /* FlipsideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA7BA34816DF898500683661 /* TimelapseRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelapseRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7BA34B16DF898500683661 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA7BA34D16DF898500683661 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA7BA34F16DF898500683661 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA7BA35116DF898500683661 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CA7BA35516DF898500683661 /* TimelapseRemote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimelapseRemote-Info.plist"; sourceTree = "<group>"; };
+		CA7BA35716DF898500683661 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA7BA35916DF898500683661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA7BA35B16DF898500683661 /* TimelapseRemote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimelapseRemote-Prefix.pch"; sourceTree = "<group>"; };
+		CA7BA35C16DF898500683661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA7BA35D16DF898500683661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA7BA35F16DF898500683661 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CA7BA36116DF898500683661 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CA7BA36316DF898500683661 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CA7BA36616DF898500683661 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CA7BA36916DF898500683661 /* TimelapseRemote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimelapseRemote.xcdatamodel; sourceTree = "<group>"; };
+		CA7BA36B16DF898500683661 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CA7BA36C16DF898500683661 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CA7BA36E16DF898500683661 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		CA7BA36F16DF898500683661 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA7BA34516DF898500683661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7BA34C16DF898500683661 /* UIKit.framework in Frameworks */,
+				CA7BA34E16DF898500683661 /* Foundation.framework in Frameworks */,
+				CA7BA35016DF898500683661 /* CoreGraphics.framework in Frameworks */,
+				CA7BA35216DF898500683661 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA7BA33F16DF898500683661 = {
+			isa = PBXGroup;
+			children = (
+				CA7BA35316DF898500683661 /* TimelapseRemote */,
+				CA7BA34A16DF898500683661 /* Frameworks */,
+				CA7BA34916DF898500683661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA7BA34916DF898500683661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA7BA34816DF898500683661 /* TimelapseRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA7BA34A16DF898500683661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA7BA34B16DF898500683661 /* UIKit.framework */,
+				CA7BA34D16DF898500683661 /* Foundation.framework */,
+				CA7BA34F16DF898500683661 /* CoreGraphics.framework */,
+				CA7BA35116DF898500683661 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA7BA35316DF898500683661 /* TimelapseRemote */ = {
+			isa = PBXGroup;
+			children = (
+				CA7BA35C16DF898500683661 /* AppDelegate.h */,
+				CA7BA35D16DF898500683661 /* AppDelegate.m */,
+				CA7BA36516DF898500683661 /* MainStoryboard.storyboard */,
+				CA7BA36B16DF898500683661 /* MainViewController.h */,
+				CA7BA36C16DF898500683661 /* MainViewController.m */,
+				CA7BA36E16DF898500683661 /* FlipsideViewController.h */,
+				CA7BA36F16DF898500683661 /* FlipsideViewController.m */,
+				CA7BA36816DF898500683661 /* TimelapseRemote.xcdatamodeld */,
+				CA7BA35416DF898500683661 /* Supporting Files */,
+			);
+			path = TimelapseRemote;
+			sourceTree = "<group>";
+		};
+		CA7BA35416DF898500683661 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA7BA35516DF898500683661 /* TimelapseRemote-Info.plist */,
+				CA7BA35616DF898500683661 /* InfoPlist.strings */,
+				CA7BA35916DF898500683661 /* main.m */,
+				CA7BA35B16DF898500683661 /* TimelapseRemote-Prefix.pch */,
+				CA7BA35F16DF898500683661 /* Default.png */,
+				CA7BA36116DF898500683661 /* Default@2x.png */,
+				CA7BA36316DF898500683661 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA7BA34716DF898500683661 /* TimelapseRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA7BA37316DF898500683661 /* Build configuration list for PBXNativeTarget "TimelapseRemote" */;
+			buildPhases = (
+				CA7BA34416DF898500683661 /* Sources */,
+				CA7BA34516DF898500683661 /* Frameworks */,
+				CA7BA34616DF898500683661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimelapseRemote;
+			productName = TimelapseRemote;
+			productReference = CA7BA34816DF898500683661 /* TimelapseRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA7BA34016DF898500683661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alex Forey";
+			};
+			buildConfigurationList = CA7BA34316DF898500683661 /* Build configuration list for PBXProject "TimelapseRemote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA7BA33F16DF898500683661;
+			productRefGroup = CA7BA34916DF898500683661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA7BA34716DF898500683661 /* TimelapseRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA7BA34616DF898500683661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7BA35816DF898500683661 /* InfoPlist.strings in Resources */,
+				CA7BA36016DF898500683661 /* Default.png in Resources */,
+				CA7BA36216DF898500683661 /* Default@2x.png in Resources */,
+				CA7BA36416DF898500683661 /* Default-568h@2x.png in Resources */,
+				CA7BA36716DF898500683661 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA7BA34416DF898500683661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7BA35A16DF898500683661 /* main.m in Sources */,
+				CA7BA35E16DF898500683661 /* AppDelegate.m in Sources */,
+				CA7BA36A16DF898500683661 /* TimelapseRemote.xcdatamodeld in Sources */,
+				CA7BA36D16DF898500683661 /* MainViewController.m in Sources */,
+				CA7BA37016DF898500683661 /* FlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA7BA35616DF898500683661 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA7BA35716DF898500683661 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA7BA36516DF898500683661 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA7BA36616DF898500683661 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA7BA37116DF898500683661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA7BA37216DF898500683661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA7BA37416DF898500683661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimelapseRemote/TimelapseRemote-Prefix.pch";
+				INFOPLIST_FILE = "TimelapseRemote/TimelapseRemote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA7BA37516DF898500683661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimelapseRemote/TimelapseRemote-Prefix.pch";
+				INFOPLIST_FILE = "TimelapseRemote/TimelapseRemote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA7BA34316DF898500683661 /* Build configuration list for PBXProject "TimelapseRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7BA37116DF898500683661 /* Debug */,
+				CA7BA37216DF898500683661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA7BA37316DF898500683661 /* Build configuration list for PBXNativeTarget "TimelapseRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7BA37416DF898500683661 /* Debug */,
+				CA7BA37516DF898500683661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA7BA36816DF898500683661 /* TimelapseRemote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA7BA36916DF898500683661 /* TimelapseRemote.xcdatamodel */,
+			);
+			currentVersion = CA7BA36916DF898500683661 /* TimelapseRemote.xcdatamodel */;
+			path = TimelapseRemote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CA7BA34016DF898500683661 /* Project object */;
+}
