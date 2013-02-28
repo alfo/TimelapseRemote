@@ -18,6 +18,8 @@
     UInt8 txBuffer[BUFFER_LEN];
 }
 
+- (void)sendString:(NSString *)text;
+
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 - (IBAction)stateChange:(id)sender;
 - (IBAction)directionChange:(id)sender;

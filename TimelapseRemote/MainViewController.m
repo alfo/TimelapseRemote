@@ -55,7 +55,9 @@
     
 }
 
-- (void)sendString:(NSString *)text {
+- (void)sendString:(NSString *)command {
+    NSString *text = [command stringByAppendingString:@"\n"];
+    NSLog(@"Sending '%@'...", text);
     int bytesToWrite = text.length;
     for (int i = 0; i < bytesToWrite; i++) {
         txBuffer[i] = (int)[text characterAtIndex:i];
@@ -79,9 +81,36 @@
 }
 
 - (IBAction)stateChange:(id)sender {
+    NSString *command = [[NSString alloc] init];
+    switch (((UISegmentedControl *)sender).selectedSegmentIndex) {
+        case 0:
+            command = @"start";
+            break;
+        case 1:
+            command = @"pause";
+            break;
+        case 2:
+        default:
+            command = @"stop";
+            break;
+    }
+    
+    [self sendString:command];
 }
 
 - (IBAction)directionChange:(id)sender {
+    NSString *command = [[NSString alloc] init];
+    switch (((UISegmentedControl *)sender).selectedSegmentIndex) {
+        case 0:
+            command = @"setDir 1";
+        default:
+            break;
+        case 1:
+            command = @"setDir 2";
+            break;
+    }
+    
+    [self sendString:command];
 }
 
 - (IBAction)intervalChange:(id)sender {
