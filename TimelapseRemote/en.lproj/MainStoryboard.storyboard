@@ -65,7 +65,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-uv-tjx">
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3000" minimumValue="1000" maximumValue="1000000" stepValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-uv-tjx">
                                 <connections>
                                     <action selector="intervalChange:" destination="2" eventType="valueChanged" id="3Kw-7v-e4h"/>
                                 </connections>
@@ -80,12 +80,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minimumValue="50" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-xy-EiV">
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minimumValue="50" maximumValue="1000" stepValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-xy-EiV">
                                 <connections>
                                     <action selector="distanceChange:" destination="2" eventType="valueChanged" id="6J3-uM-5JN"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Taken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1F-B5-dWw">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-SA-15b">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -105,15 +110,15 @@
                             <constraint firstItem="5dy-pd-XF3" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1dD-5L-n1G"/>
                             <constraint firstItem="Kxq-xi-RR5" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2vI-3k-nXE"/>
                             <constraint firstItem="Kxq-xi-RR5" firstAttribute="baseline" secondItem="sLF-sm-Hsl" secondAttribute="baseline" type="default" id="3If-2S-JZQ"/>
-                            <constraint firstAttribute="bottom" secondItem="i1F-B5-dWw" secondAttribute="bottom" constant="144" id="3zK-pA-xm0"/>
                             <constraint firstItem="sSM-s6-qDo" firstAttribute="top" secondItem="3" secondAttribute="top" constant="65" id="5FM-ae-7Dm"/>
-                            <constraint firstItem="i1F-B5-dWw" firstAttribute="centerX" secondItem="Ie2-ii-TbG" secondAttribute="centerX" type="default" id="9js-dt-oNU"/>
+                            <constraint firstAttribute="bottom" secondItem="Ie2-ii-TbG" secondAttribute="bottom" constant="51" id="AD7-75-NgO"/>
                             <constraint firstItem="BmN-uv-tjx" firstAttribute="centerY" secondItem="8ve-SP-8Ub" secondAttribute="centerY" type="default" id="H7f-Zu-YvL"/>
                             <constraint firstItem="AYZ-BI-ifh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="J0B-qn-Rns"/>
                             <constraint firstItem="lcJ-gf-30r" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="JeK-9o-eMe"/>
                             <constraint firstAttribute="trailing" secondItem="BmN-uv-tjx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NjR-Sq-McA"/>
                             <constraint firstItem="sLF-sm-Hsl" firstAttribute="leading" secondItem="8ve-SP-8Ub" secondAttribute="leading" type="default" id="OfK-qi-BP5"/>
                             <constraint firstItem="8ve-SP-8Ub" firstAttribute="baseline" secondItem="AYZ-BI-ifh" secondAttribute="baseline" type="default" id="RlR-la-KsR"/>
+                            <constraint firstAttribute="bottom" secondItem="9Lc-SA-15b" secondAttribute="bottom" constant="201" id="Sbd-QO-Qk1"/>
                             <constraint firstAttribute="trailing" secondItem="5dy-pd-XF3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="THA-R3-Ge2"/>
                             <constraint firstItem="lcJ-gf-30r" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="VHh-cg-hAw"/>
                             <constraint firstItem="5dy-pd-XF3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="131" id="Zfo-TZ-ohr"/>
@@ -122,19 +127,22 @@
                             <constraint firstAttribute="trailing" secondItem="sSM-s6-qDo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="e9U-TW-PeZ"/>
                             <constraint firstItem="sLF-sm-Hsl" firstAttribute="centerY" secondItem="NVm-xy-EiV" secondAttribute="centerY" type="default" id="eoH-SB-2l3"/>
                             <constraint firstItem="Kxq-xi-RR5" firstAttribute="trailing" secondItem="AYZ-BI-ifh" secondAttribute="trailing" type="default" id="gGd-dH-Jgc"/>
+                            <constraint firstAttribute="bottom" secondItem="i1F-B5-dWw" secondAttribute="bottom" constant="151" id="gbN-RW-3Cr"/>
                             <constraint firstItem="sLF-sm-Hsl" firstAttribute="trailing" secondItem="8ve-SP-8Ub" secondAttribute="trailing" type="default" id="heJ-Wg-4UQ"/>
                             <constraint firstAttribute="trailing" secondItem="NVm-xy-EiV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jsi-e7-6fP"/>
-                            <constraint firstAttribute="bottom" secondItem="Ie2-ii-TbG" secondAttribute="bottom" constant="47" id="lq4-F7-lTu"/>
                             <constraint firstItem="8ve-SP-8Ub" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="119" id="mLH-Tk-IOy"/>
-                            <constraint firstItem="i1F-B5-dWw" firstAttribute="centerX" secondItem="5dy-pd-XF3" secondAttribute="centerX" type="default" id="nyQ-Et-Zl0"/>
                             <constraint firstItem="sSM-s6-qDo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oiR-BN-a03"/>
                             <constraint firstItem="BmN-uv-tjx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="192" id="q0Z-NY-pjx"/>
+                            <constraint firstItem="i1F-B5-dWw" firstAttribute="centerX" secondItem="Ie2-ii-TbG" secondAttribute="centerX" type="default" id="tU9-4K-G93"/>
+                            <constraint firstItem="i1F-B5-dWw" firstAttribute="centerX" secondItem="9Lc-SA-15b" secondAttribute="centerX" type="default" id="tV1-tm-nBQ"/>
                             <constraint firstItem="lcJ-gf-30r" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="uJ3-Da-FYL"/>
+                            <constraint firstItem="9Lc-SA-15b" firstAttribute="centerX" secondItem="5dy-pd-XF3" secondAttribute="centerX" type="default" id="wya-Yw-HrX"/>
                             <constraint firstItem="NVm-xy-EiV" firstAttribute="top" secondItem="BmN-uv-tjx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xWE-gf-TqM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="distanceLabel" destination="NVm-xy-EiV" id="ih7-BN-S4N"/>
+                        <outlet property="distanceLabel" destination="sLF-sm-Hsl" id="OFg-NW-Vkw"/>
+                        <outlet property="feedbackLabel" destination="9Lc-SA-15b" id="Jow-Ye-LQm"/>
                         <outlet property="intervalLabel" destination="8ve-SP-8Ub" id="aZ4-aT-lX4"/>
                         <outlet property="takenLabel" destination="Ie2-ii-TbG" id="Il1-Ga-w2J"/>
                     </connections>
@@ -204,7 +212,8 @@
                 <relationship kind="action" name="distanceChange:"/>
                 <relationship kind="action" name="intervalChange:"/>
                 <relationship kind="action" name="stateChange:"/>
-                <relationship kind="outlet" name="distanceLabel" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="feedbackLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="intervalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="takenLabel" candidateClass="UILabel"/>
             </relationships>

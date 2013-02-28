@@ -27,5 +27,7 @@
 - (IBAction)distanceChange:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *takenLabel;
 @property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
-@property (strong, nonatomic) IBOutlet UIStepper *distanceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *feedbackLabel;
+
 @end
