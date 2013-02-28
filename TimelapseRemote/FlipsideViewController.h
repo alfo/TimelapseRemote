@@ -14,9 +14,14 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
 @end
 
-@interface FlipsideViewController : UIViewController
+@interface FlipsideViewController : UIViewController {
+    BOOL firstOpen;
+}
+
+- (void)setWindowScrollToVisible;
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (strong, nonatomic) IBOutlet UITextView *logWindow;
 
 - (IBAction)done:(id)sender;
 

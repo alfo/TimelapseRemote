@@ -15,4 +15,12 @@ int main(int argc, char *argv[])
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSString *log = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"ns.log"];
+    
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    [fileMgr removeItemAtPath:log error:nil];
+    
+    freopen([log fileSystemRepresentation], "a", stderr);
 }
