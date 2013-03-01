@@ -23,6 +23,8 @@
 		CA7BA37016DF898500683661 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BA36F16DF898500683661 /* FlipsideViewController.m */; };
 		CA7BA37916DF8A9700683661 /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA37816DF8A9700683661 /* libRscMgrUniv.a */; };
 		CA7BA37B16DF8AC100683661 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */; };
+		CAF7670616E024DD00309F9D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7670516E024DD00309F9D /* Icon.png */; };
+		CAF7670816E024E200309F9D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7670716E024E200309F9D /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		CA7BA37716DF8A9700683661 /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
 		CA7BA37816DF8A9700683661 /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
 		CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		CAF7670516E024DD00309F9D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CAF7670716E024E200309F9D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 		CA7BA33F16DF898500683661 = {
 			isa = PBXGroup;
 			children = (
+				CAF7670716E024E200309F9D /* Icon@2x.png */,
+				CAF7670516E024DD00309F9D /* Icon.png */,
 				CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */,
 				CA7BA35316DF898500683661 /* TimelapseRemote */,
 				CA7BA34A16DF898500683661 /* Frameworks */,
@@ -187,6 +193,8 @@
 				CA7BA36216DF898500683661 /* Default@2x.png in Resources */,
 				CA7BA36416DF898500683661 /* Default-568h@2x.png in Resources */,
 				CA7BA36716DF898500683661 /* MainStoryboard.storyboard in Resources */,
+				CAF7670616E024DD00309F9D /* Icon.png in Resources */,
+				CAF7670816E024E200309F9D /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +340,7 @@
 				CA7BA37516DF898500683661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
