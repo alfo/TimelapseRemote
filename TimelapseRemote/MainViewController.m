@@ -155,4 +155,14 @@
     // Send it to the Arduino
     [self sendString:[NSString stringWithFormat:@"setDis %@", distance]];
 }
+
+- (IBAction)goToMotor:(id)sender {
+    [self sendString:@"go 1"];
+}
+
+- (IBAction)goFromMotor:(id)sender {
+    [self sendString:@"go 2"];
+}
+
+
 @end

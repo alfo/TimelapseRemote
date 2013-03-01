@@ -25,6 +25,9 @@
 - (IBAction)directionChange:(id)sender;
 - (IBAction)intervalChange:(id)sender;
 - (IBAction)distanceChange:(id)sender;
+- (IBAction)goToMotor:(id)sender;
+- (IBAction)goFromMotor:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UILabel *takenLabel;
 @property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
