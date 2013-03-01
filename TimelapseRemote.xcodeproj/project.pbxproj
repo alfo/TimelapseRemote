@@ -25,6 +25,9 @@
 		CA7BA37B16DF8AC100683661 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */; };
 		CAF7670616E024DD00309F9D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7670516E024DD00309F9D /* Icon.png */; };
 		CAF7670816E024E200309F9D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7670716E024E200309F9D /* Icon@2x.png */; };
+		CAFABCD116E0F0C700B5DC39 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CAFABCD016E0F0C600B5DC39 /* Default.png */; };
+		CAFABCD316E0F0CA00B5DC39 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAFABCD216E0F0CA00B5DC39 /* Default@2x.png */; };
+		CAFABCD516E0F0CD00B5DC39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAFABCD416E0F0CD00B5DC39 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		CAF7670516E024DD00309F9D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		CAF7670716E024E200309F9D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CAFABCD016E0F0C600B5DC39 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CAFABCD216E0F0CA00B5DC39 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CAFABCD416E0F0CD00B5DC39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 		CA7BA33F16DF898500683661 = {
 			isa = PBXGroup;
 			children = (
+				CAFABCD416E0F0CD00B5DC39 /* Default-568h@2x.png */,
+				CAFABCD216E0F0CA00B5DC39 /* Default@2x.png */,
+				CAFABCD016E0F0C600B5DC39 /* Default.png */,
 				CAF7670716E024E200309F9D /* Icon@2x.png */,
 				CAF7670516E024DD00309F9D /* Icon.png */,
 				CA7BA37A16DF8AC100683661 /* ExternalAccessory.framework */,
@@ -195,6 +204,9 @@
 				CA7BA36716DF898500683661 /* MainStoryboard.storyboard in Resources */,
 				CAF7670616E024DD00309F9D /* Icon.png in Resources */,
 				CAF7670816E024E200309F9D /* Icon@2x.png in Resources */,
+				CAFABCD116E0F0C700B5DC39 /* Default.png in Resources */,
+				CAFABCD316E0F0CA00B5DC39 /* Default@2x.png in Resources */,
+				CAFABCD516E0F0CD00B5DC39 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
