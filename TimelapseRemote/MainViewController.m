@@ -47,7 +47,6 @@
     int bytesRead = [rscMgr read:rxBuffer Length:numBytes];
     NSLog(@"Read %d bytes from serial cable.", bytesRead);
     self.takenLabel.text = @"";
-    self.feedbackLabel.text = @"";
     
     NSMutableString *feedback = [NSMutableString string];
     
@@ -62,7 +61,7 @@
         self.takenLabel.text = feedback;
     } else {
         // It's a status change
-        self.feedbackLabel.text = feedback;
+        self.feedbackLabel.text = [feedback substringFromIndex:1];
     }
 }
 
