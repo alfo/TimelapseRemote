@@ -13,24 +13,31 @@
 #define BUFFER_LEN 1024
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate, RscMgrDelegate> {
+    
+    // Declare serial object
     RscMgr *rscMgr;
     UInt8 rxBuffer[BUFFER_LEN];
     UInt8 txBuffer[BUFFER_LEN];
 }
 
+// What. Don't delete this.
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+// Outlet properties
+@property (strong, nonatomic) IBOutlet UILabel *takenLabel;
+@property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
+@property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *feedbackLabel;
+
+// Methods!
+// Declare serial send method
 - (void)sendString:(NSString *)text;
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+// Action Methods
 - (IBAction)stateChange:(id)sender;
 - (IBAction)directionChange:(id)sender;
 - (IBAction)intervalChange:(id)sender;
 - (IBAction)distanceChange:(id)sender;
 - (IBAction)goToMotor:(id)sender;
 - (IBAction)goFromMotor:(id)sender;
-
-@property (strong, nonatomic) IBOutlet UILabel *takenLabel;
-@property (strong, nonatomic) IBOutlet UILabel *intervalLabel;
-@property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
-@property (strong, nonatomic) IBOutlet UILabel *feedbackLabel;
-
 @end
